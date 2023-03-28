@@ -1,0 +1,124 @@
+/* -------------- CSS Rest Section ----------------- */
+* {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body { padding-top: 5%; }
+
+/* --------------- navbar Section ----------------- */
+.navbar {
+    width: 100%;
+    height: max-content;
+}
+
+.nav>li {
+    margin: auto 10px;
+}
+
+.resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    padding: 2% 0%;
+
+}
+
+.resume>p,
+a {
+    margin: 0 0.5%;
+}
+
+.welcomesection>img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.aboutMe-section,
+.projects-section,
+.contactMe-section,
+.icons-section {
+    margin: 4% auto;
+    text-align: center;
+    padding: 3% 0%;
+}
+
+.aboutme,
+.contact {
+    margin: 4% 20%;
+    display: flex;
+    width: auto;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.me-leftside,
+.me-rightside {
+    width: 50%;
+    height: fit-content;
+    text-align: center;
+    object-fit: cover;
+    box-sizing: content-box;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.gallery {
+    margin: 3% auto;
+    background: #EEE;
+}
+
+.gallery-cell {
+    width: 80%;
+    height: 550px;
+    margin-right: 10px;
+    background: rgb(193, 236, 193);
+    counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+.button {
+    margin: 2% auto;
+    background-color: wheat;
+    width: 30%;
+    border-radius: 12px;
+
+}
+
+#icons {
+    font-size: 200%;
+}
+
+.form-control {
+    width: 20%;
+}
+
+
+footer {
+    text-align: center;
+}
