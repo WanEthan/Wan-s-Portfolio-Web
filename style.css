@@ -12,12 +12,15 @@
     box-sizing: border-box;
 }
 
-body { padding-top: 5%; }
-
 /* --------------- navbar Section ----------------- */
 .navbar {
     width: 100%;
     height: max-content;
+    background-color: white;
+}
+
+.logo {
+    background-color: none;
 }
 
 .nav>li {
@@ -38,40 +41,16 @@ body { padding-top: 5%; }
 .resume>p,
 a {
     margin: 0 0.5%;
-}
-
-.welcomesection>img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    text-decoration: none;
 }
 
 .aboutMe-section,
 .projects-section,
 .contactMe-section,
 .icons-section {
-    margin: 4% auto;
+    margin: 2% auto;
     text-align: center;
-    padding: 3% 0%;
-}
-
-.aboutme,
-.contact {
-    margin: 4% 20%;
-    display: flex;
-    width: auto;
-    height: max-content;
-    justify-content: center;
-    align-items: center;
-}
-
-.me-leftside,
-.me-rightside {
-    width: 50%;
-    height: fit-content;
-    text-align: center;
-    object-fit: cover;
-    box-sizing: content-box;
+    padding: 2% 0%;
 }
 
 * {
@@ -81,25 +60,28 @@ a {
 
 .gallery {
     margin: 3% auto;
-    background: #EEE;
+}
+
+.project {
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 12px;
+    margin-bottom: 3%;
 }
 
 .gallery-cell {
     width: 80%;
-    height: 550px;
-    margin-right: 10px;
-    background: rgb(193, 236, 193);
+    height: 400px;
+    margin-right: 5px;
+    border: 2px solid black;
     counter-increment: gallery-cell;
 }
 
 /* cell number */
 .gallery-cell:before {
     display: block;
-    text-align: center;
-    content: counter(gallery-cell);
     line-height: 200px;
-    font-size: 80px;
-    color: white;
+    /* content: counter(gallery-cell); */
 }
 
 .button {
@@ -112,13 +94,18 @@ a {
 
 #icons {
     font-size: 200%;
+    color: black;
+    margin: 0% 5%
 }
 
 .form-control {
     width: 20%;
 }
 
-
 footer {
     text-align: center;
+}
+
+h2 {
+    padding: 4%;
 }

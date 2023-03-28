@@ -7687,8 +7687,12 @@ readers do not read off random characters that represent icons */
 .fa-cc-amex:before {
   content: "\f1f3"; }
 
+.fa-browser:before {
+  content: "\f37e";
+}
+
 .fa-uber:before {
-  content: "\f402"; }
+  content: "\f37e"; }
 
 .fa-github:before {
   content: "\f09b"; }

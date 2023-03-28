@@ -15,24 +15,25 @@
 
 <body>
     <!-- --------------nav Bar------------- -->
-    <div id="#main-navbar" class="navbar d-flex justify-content-around fixed-top">
+    <div id="#main-navbar" class="navbar d-flex justify-content-around">
         <div class="logo">
             <h1>Ethan Wan</h1>
+            <!-- <img class="logo" src="./mylogo.jpg" alt="logo"> -->
         </div>
         <div class="options">
             <ul class="nav justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#resume"><img src="./home.png"
+                    <a class="nav-link active" aria-current="page" href="#resume-section"><img src="./iconimage/home.png"
                             alt="home"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#aboutme"><img src="./user.png" alt="user"></a>
+                    <a class="nav-link" href="#aboutme-section"><img src="./iconimage/user.png" alt="user"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#project-section"><img src="./projects.png" alt="projects"></a>
+                    <a class="nav-link" href="#project-section"><img src="./iconimage/projects.png" alt="projects"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact-me"><img src="./contact.png" alt="contact"></a>
+                    <a class="nav-link" href="#contact-me"><img src="./iconimage/contact.png" alt="contact"></a>
                 </li>
             </ul>
         </div>
@@ -41,22 +42,27 @@
 
     <!-- --------------resume section------------- -->
 
-    <div id="resume" class="resume">
+    <div id="resume-section" class="resume">
         <p>Welcome to download my resume</p>
         <a href="#">Download Here</a>
     </div>
 
     <!-- --------------weclome section------------- -->
-    <div id="welcome" class="welcomesection">
-        <img src="./welcome1.png" alt="welcome">
+    <div id="welcome">
+        <img src="welcome1.png" class="img-fluid" alt="Responsive image">
+        <div class="centered">
+            <!-- <marquee direction="up">Hi, I'm Ethan Wan. <br> Full-Stack Software Developer </marquee> -->
+        </div>
     </div>
 
     <!-- --------------About me section------------- -->
 
-    <div id="aboutme" class="aboutMe-section">
+
+    <div id="aboutme-section" class="container text-center">
         <h2>About Me</h2>
-        <div class="aboutme">
-            <div class="me-leftside">
+        <div class="row row-cols-1 row-cols-md-2 g-2">
+            <div class="me-leftside col">
+
                 <p>I am an aspiring coder with a passion for technology and software development. I'm currently
                     participating in a Coding Dojo bootcamp, which shows my dedication to learning and gaining hands-on
                     experience in full-stack software development. Moreover, My commitment to my education is reflected
@@ -67,25 +73,75 @@
                 <p>Aside from coding I have a large passion for travling, which is also where my hobbies in eating and
                     learning from. When I'm not doing either of those, you'll probably find me coding.</p>
             </div>
-            <div class="me-rightside">
 
+            <div class="me-rightside col">
+                <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                    <div class="gallery-cell"></div>
+                    <div class="gallery-cell"></div>
+                    <div class="gallery-cell"></div>
+                    <div class="gallery-cell"></div>
+                    <div class="gallery-cell"></div>
+                </div>
             </div>
-
         </div>
     </div>
 
 
     <!-- --------------Projects section------------- -->
 
-    <div id="project-section" class="projects-section">
-        <h2>Select Projects</h2>
-        <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
+    <div id="project-section" class="projects-section container text-center">
+
+        <h2>Selected Projects</h2>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="project-1">
+                    <img class="project" src="./project imgs/Project1.png" class="project-img-top" alt="project-1">
+                    <div class="project-body">
+                        <h5 class="project-title">Simple Calculator</h5>
+                        <p class="project-text">This is a basic calculator with the five functions</p>
+                        <a href="#" class="code-link"><i id="icons" class="fa-solid fa-code"></i></a>
+                        <a href="#" class="demo-link"><i id="icons" class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="project-2">
+                    <img class="project" src="./project imgs/Porject2.png" class="project-img-top" alt="project-2">
+                    <div class="project-body">
+                        <h5 class="project-title">Simple Calculator</h5>
+                        <p class="project-text">This is a profile web</p>
+                        <a href="#" class="code-link"><i id="icons" class="fa-solid fa-code"></i></a>
+                        <a href="#" class="demo-link"><i id="icons" class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="project-3">
+                    <img class="project" src="./project imgs/project3.png" class="project-img-top" alt="project-3">
+                    <div class="project-body">
+                        <h5 class="project-title">Simple Calculator</h5>
+                        <p class="project-text">This is a profile web</p>
+                        <a href="#" class="code-link"><i id="icons" class="fa-solid fa-code"></i></a>
+                        <a href="#" class="demo-link"><i id="icons" class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="project-4">
+                    <img class="project" src="./project imgs/project4.png" class="project-img-top" alt="project-4">
+                    <div class="project-body">
+                        <h5 class="project-title">Simple Calculator</h5>
+                        <p class="project-text">This is a profile web</p>
+                        <a href="#" class="code-link"><i id="icons" class="fa-solid fa-code"></i></a>
+                        <a href="#" class="demo-link"><i id="icons"
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
+
 
     </div>
 
@@ -93,17 +149,17 @@
 
     <!-- --------------Contect me section------------- -->
 
-    <div id="contact-me" class="contactMe-section">
+    <div id="contact-me" class="contactMe-section container text-center">
         <h2>Contact Me</h2>
 
-        <div class="contact">
+        <div class="contact row row-cols-1 row-cols-md-2 g-2 ">
 
-            <div class="me-leftside">
+            <div class="col">
 
 
             </div>
 
-            <div class="me-rightside">
+            <div class="col">
                 <form action="/submit-url" method="post">
                     <!-- The action attribute indicates where form data should be sent. For example, <form action="/submit-url"></form> tells the browser that the form data should be sent to the path /submit-url-->
                     <div class="form-floating mb-3">
@@ -128,7 +184,7 @@
 
                     <div class="opt-in">
                         <input type="checkbox" name="accept" id="accept">
-                        <label for="accept">Yes, I would like to receive your response.</label>
+                        <label for="accept">Yes, I would like to receivema a response from Ethan Wan.</label>
                     </div>
 
                     <div class="button-div">
@@ -149,11 +205,14 @@
         <a href="https://www.linkedin.com/in/wanethan/"><i id="icons" class="fa-brands fa-linkedin"></i></a>
         <a href="mailto:qwe052061@gmail.com"><i id="icons" class="fa-solid fa-envelope"></i></a>
         <a href="mailto:qwe052061@gmail.com"><i id="icons" class="fa-solid fa-file"></i></a>
+
+
     </div>
 
     <footer>
         <p>© Copyright<a class="myname" href="www.linkedin.com/in/ethan-wan">YU JEN WAN</a>. All rights reserved</p>
     </footer>
+
 
     <script src="script.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
