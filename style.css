@@ -16,11 +16,6 @@
 .navbar {
     width: 100%;
     height: max-content;
-    background-color: white;
-}
-
-.logo {
-    background-color: none;
 }
 
 .nav>li {
@@ -44,13 +39,14 @@ a {
     text-decoration: none;
 }
 
+.welcome-section,
 .aboutMe-section,
 .projects-section,
 .contactMe-section,
 .icons-section {
-    margin: 2% auto;
+    margin: 1% auto;
     text-align: center;
-    padding: 2% 0%;
+    padding: 1% 0%;
 }
 
 * {
@@ -108,4 +104,11 @@ footer {
 
 h2 {
     padding: 4%;
+}
+
+#findmore {
+    margin-top: 5%;
+    background-color: wheat;
+    border: none;
+    color: black;
 }

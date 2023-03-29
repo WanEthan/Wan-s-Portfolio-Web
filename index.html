@@ -23,17 +23,16 @@
         <div class="options">
             <ul class="nav justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#resume-section"><img src="./iconimage/home.png"
-                            alt="home"></i></a>
+                    <a class="home nav-link active" href="#resume-section" onmouseover="hoverover('home')" onmouseout="hoverout('home')"><img src="./iconimage/home.png" alt="home"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#aboutme-section"><img src="./iconimage/user.png" alt="user"></a>
+                    <a class="me nav-link" href="#aboutme-section" onmouseover="hoverover('me')" onmouseout="hoverout('me')"><img src="./iconimage/user.png" alt="user"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#project-section"><img src="./iconimage/projects.png" alt="projects"></a>
+                    <a class="project nav-link" href="#project-section" onmouseover="hoverover('project')" onmouseout="hoverout('project')"><img src="./iconimage/projects.png" alt="projects"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact-me"><img src="./iconimage/contact.png" alt="contact"></a>
+                    <a class="contact nav-link" href="#contact-me" onmouseover="hoverover('contact')" onmouseout="hoverout('contact')"><img src="./iconimage/contact.png" alt="contact"></a>
                 </li>
             </ul>
         </div>
@@ -48,7 +47,7 @@
     </div>
 
     <!-- --------------weclome section------------- -->
-    <div id="welcome">
+    <div id="welcome" class="welcome-section">
         <img src="welcome1.png" class="img-fluid" alt="Responsive image">
         <div class="centered">
             <!-- <marquee direction="up">Hi, I'm Ethan Wan. <br> Full-Stack Software Developer </marquee> -->
@@ -100,7 +99,7 @@
                     <div class="project-body">
                         <h5 class="project-title">Simple Calculator</h5>
                         <p class="project-text">This is a basic calculator with the five functions</p>
-                        <a href="#" class="code-link"><i id="icons" class="fa-solid fa-code"></i></a>
+                        <a href="https://github.com/WanEthan/simple-calculator" class="code-link"><i id="icons" class="fa-solid fa-code"></i></a>
                         <a href="#" class="demo-link"><i id="icons" class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
 
@@ -110,9 +109,9 @@
                 <div class="project-2">
                     <img class="project" src="./project imgs/Porject2.png" class="project-img-top" alt="project-2">
                     <div class="project-body">
-                        <h5 class="project-title">Simple Calculator</h5>
-                        <p class="project-text">This is a profile web</p>
-                        <a href="#" class="code-link"><i id="icons" class="fa-solid fa-code"></i></a>
+                        <h5 class="project-title">Profile Page</h5>
+                        <p class="project-text">This is a profile Page</p>
+                        <a href="https://github.com/WanEthan/Profile-Page" class="code-link"><i id="icons" class="fa-solid fa-code"></i></a>
                         <a href="#" class="demo-link"><i id="icons" class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -121,9 +120,9 @@
                 <div class="project-3">
                     <img class="project" src="./project imgs/project3.png" class="project-img-top" alt="project-3">
                     <div class="project-body">
-                        <h5 class="project-title">Simple Calculator</h5>
-                        <p class="project-text">This is a profile web</p>
-                        <a href="#" class="code-link"><i id="icons" class="fa-solid fa-code"></i></a>
+                        <h5 class="project-title">Dojo Weather</h5>
+                        <p class="project-text">This is a Dojo weather</p>
+                        <a href="https://github.com/WanEthan/Dojo-Weather" class="code-link"><i id="icons" class="fa-solid fa-code"></i></a>
                         <a href="#" class="demo-link"><i id="icons" class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -132,9 +131,9 @@
                 <div class="project-4">
                     <img class="project" src="./project imgs/project4.png" class="project-img-top" alt="project-4">
                     <div class="project-body">
-                        <h5 class="project-title">Simple Calculator</h5>
+                        <h5 class="project-title">Liking-Likes</h5>
                         <p class="project-text">This is a profile web</p>
-                        <a href="#" class="code-link"><i id="icons" class="fa-solid fa-code"></i></a>
+                        <a href="https://github.com/WanEthan/Liking-Likes" class="code-link"><i id="icons" class="fa-solid fa-code"></i></a>
                         <a href="#" class="demo-link"><i id="icons"
                                 class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
@@ -142,7 +141,7 @@
             </div>
         </div>
 
-
+        <a id="findmore" class="btn btn-primary" role="button" href="https://github.com/WanEthan">Find More My Projects</a>
     </div>
 
 
