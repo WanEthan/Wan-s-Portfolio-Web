@@ -11,28 +11,35 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Patrick+Hand&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- --------------nav Bar------------- -->
     <div id="#main-navbar" class="navbar d-flex justify-content-around">
         <div class="logo">
-            <h1>Ethan Wan</h1>
+            <h1>WAN</h1>
             <!-- <img class="logo" src="./mylogo.jpg" alt="logo"> -->
         </div>
         <div class="options">
             <ul class="nav justify-content-end">
                 <li class="nav-item">
-                    <a class="home nav-link active" href="#resume-section" onmouseover="hoverover('home')" onmouseout="hoverout('home')"><img src="./iconimage/home.png" alt="home"></a>
+                    <a class="home nav-link active" href="#resume-section" onmouseover="hoverover('home')"
+                        onmouseout="hoverout('home')"><img src="./iconimage/home.png" alt="home"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="me nav-link" href="#aboutme-section" onmouseover="hoverover('me')" onmouseout="hoverout('me')"><img src="./iconimage/user.png" alt="user"></a>
+                    <a class="me nav-link" href="#aboutme-section" onmouseover="hoverover('me')"
+                        onmouseout="hoverout('me')"><img src="./iconimage/user.png" alt="user"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="project nav-link" href="#project-section" onmouseover="hoverover('project')" onmouseout="hoverout('project')"><img src="./iconimage/projects.png" alt="projects"></a>
+                    <a class="project nav-link" href="#project-section" onmouseover="hoverover('project')"
+                        onmouseout="hoverout('project')"><img src="./iconimage/projects.png" alt="projects"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="contact nav-link" href="#contact-me" onmouseover="hoverover('contact')" onmouseout="hoverout('contact')"><img src="./iconimage/contact.png" alt="contact"></a>
+                    <a class="contact nav-link" href="#contact-me" onmouseover="hoverover('contact')"
+                        onmouseout="hoverout('contact')"><img src="./iconimage/contact.png" alt="contact"></a>
                 </li>
             </ul>
         </div>
@@ -43,14 +50,24 @@
 
     <div id="resume-section" class="resume">
         <p>Welcome to download my resume</p>
-        <a href="#">Download Here</a>
+        <a href="#"><i class="fa-solid fa-download"></i> Click Here</a>
     </div>
 
     <!-- --------------weclome section------------- -->
     <div id="welcome" class="welcome-section">
-        <img src="welcome1.png" class="img-fluid" alt="Responsive image">
-        <div class="centered">
-            <!-- <marquee direction="up">Hi, I'm Ethan Wan. <br> Full-Stack Software Developer </marquee> -->
+        <!-- <img src="welcome1.png" class="img-fluid" alt="Responsive image"> -->
+        <div class="words">
+            <span>H</span>
+            <span>I</span>
+            <span>,&nbsp;</span> <!-- &nbsp;add spacing -->
+            <span>I'M</span>
+            <span>&nbsp;E</span>
+            <span>T</span>
+            <span>H</span>
+            <span>A</span>
+            <span>N</span>
+            <p>Full-Stack Software Developer</p>
+
         </div>
     </div>
 
@@ -74,12 +91,24 @@
             </div>
 
             <div class="me-rightside col">
-                <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-                    <div class="gallery-cell"></div>
-                    <div class="gallery-cell"></div>
-                    <div class="gallery-cell"></div>
-                    <div class="gallery-cell"></div>
-                    <div class="gallery-cell"></div>
+                <div class="gallery js-flickity" data-flickity-options='{ "autoPlay": true}'>
+                    <div class="gallery-cell">
+                        <img src="sde.png" alt="Software Development Logo1">
+                    </div>
+                    <div class="gallery-cell">
+                        <h3>My Skills</h3>
+                        <p>Languages: </p>
+                        <i class="fa-brands fa-html5" style="color: #d7410f;"></i> 
+                        <i class="fa-brands fa-css3-alt" style="color: #3c6dc3;"></i> <i
+                            class="fa-brands fa-python"></i>  
+                            <i class="fa-brands fa-square-js" style="color: #f5e324;"></i>
+                        <p>Front-end Libraries: </p><i class="fa-brands fa-bootstrap" style="color: #61177c;"></i><i
+                            class="fa-brands fa-react" style="color: #00c7fc;"></i>
+                        <p>Frameworks: </p><i class="fa-brands fa-angular" style="color: #e32400;"></i>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="sde2.png" alt="Software Development Logo2">
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,26 +122,35 @@
         <h2>Selected Projects</h2>
 
         <div class="row row-cols-1 row-cols-md-2 g-4">
+
             <div class="col">
+
                 <div class="project-1">
                     <img class="project" src="./project imgs/Project1.png" class="project-img-top" alt="project-1">
                     <div class="project-body">
-                        <h5 class="project-title">Simple Calculator</h5>
+                        <h4 class="project-title">Simple Calculator</h4>
                         <p class="project-text">This is a basic calculator with the five functions</p>
-                        <a href="https://github.com/WanEthan/simple-calculator" class="code-link"><i id="icons" class="fa-solid fa-code"></i></a>
-                        <a href="#" class="demo-link"><i id="icons" class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="https://github.com/WanEthan/simple-calculator" class="code-link1"
+                            onmouseover="hoverover('code-link1')" onmouseout="hoverout('code-link1')"> <i
+                                class="fa-solid fa-code"></i></a>
+                        <a href="#" class="demo-link1" onmouseover="hoverover('demo-link1')"
+                            onmouseout="hoverout('demo-link1')"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
 
                 </div>
             </div>
+
             <div class="col">
                 <div class="project-2">
                     <img class="project" src="./project imgs/Porject2.png" class="project-img-top" alt="project-2">
                     <div class="project-body">
-                        <h5 class="project-title">Profile Page</h5>
+                        <h4 class="project-title">Profile Page</h4>
                         <p class="project-text">This is a profile Page</p>
-                        <a href="https://github.com/WanEthan/Profile-Page" class="code-link"><i id="icons" class="fa-solid fa-code"></i></a>
-                        <a href="#" class="demo-link"><i id="icons" class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="https://github.com/WanEthan/Profile-Page" class="code-link2"
+                            onmouseover="hoverover('code-link2')" onmouseout="hoverout('code-link2')"><i
+                                class="fa-solid fa-code"></i></a>
+                        <a href="#" class="demo-link2" onmouseover="hoverover('demo-link2')"
+                            onmouseout="hoverout('demo-link2')"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -120,10 +158,13 @@
                 <div class="project-3">
                     <img class="project" src="./project imgs/project3.png" class="project-img-top" alt="project-3">
                     <div class="project-body">
-                        <h5 class="project-title">Dojo Weather</h5>
+                        <h4 class="project-title">Dojo Weather</h4>
                         <p class="project-text">This is a Dojo weather</p>
-                        <a href="https://github.com/WanEthan/Dojo-Weather" class="code-link"><i id="icons" class="fa-solid fa-code"></i></a>
-                        <a href="#" class="demo-link"><i id="icons" class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="https://github.com/WanEthan/Dojo-Weather" class="code-link3"
+                            onmouseover="hoverover('code-link3')" onmouseout="hoverout('code-link3')"><i
+                                class="fa-solid fa-code"></i></a>
+                        <a href="#" class="demo-link3" onmouseover="hoverover('demo-link3')"
+                            onmouseout="hoverout('demo-link3')"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -131,17 +172,23 @@
                 <div class="project-4">
                     <img class="project" src="./project imgs/project4.png" class="project-img-top" alt="project-4">
                     <div class="project-body">
-                        <h5 class="project-title">Liking-Likes</h5>
+                        <h4 class="project-title">Liking-Likes</h4>
                         <p class="project-text">This is a profile web</p>
-                        <a href="https://github.com/WanEthan/Liking-Likes" class="code-link"><i id="icons" class="fa-solid fa-code"></i></a>
-                        <a href="#" class="demo-link"><i id="icons"
-                                class="fa-solid fa-up-right-from-square"></i></a>
+
+
+                        <a href="https://github.com/WanEthan/Liking-Likes" class="code-link4"
+                            onmouseover="hoverover('code-link4')" onmouseout="hoverout('code-link4')"><i
+                                class="fa-solid fa-code"></i></a>
+
+                        <a href="#" class="demo-link4" onmouseover="hoverover('demo-link4')"
+                            onmouseout="hoverout('demo-link4')"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <a id="findmore" class="btn btn-primary" role="button" href="https://github.com/WanEthan">Find More My Projects</a>
+        <a id="findmore" class="btn btn-primary" role="button" href="https://github.com/WanEthan">Find More My
+            Projects</a>
     </div>
 
 
@@ -154,7 +201,7 @@
         <div class="contact row row-cols-1 row-cols-md-2 g-2 ">
 
             <div class="col">
-
+                <img class="img-me" src="./myself.JPG" alt="myself">
 
             </div>
 
@@ -209,7 +256,7 @@
     </div>
 
     <footer>
-        <p>© Copyright<a class="myname" href="www.linkedin.com/in/ethan-wan">YU JEN WAN</a>. All rights reserved</p>
+        <p>© Copyright<a class="myname" href="www.linkedin.com/in/ethan-wan">YU JEN WAN</a>All rights reserved</p>
     </footer>
 
 
