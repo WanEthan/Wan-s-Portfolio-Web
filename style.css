@@ -25,13 +25,16 @@
 
 h2 {
     padding: 2%;
-    background: rgb(232,242,255,1);
+    background: rgb(232, 242, 255, 1);
 }
+
 .row {
     align-items: center;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
     color: rgb(26, 57, 10);
 }
 
@@ -39,7 +42,7 @@ h1, h2, p {
 .navbar {
     width: 100%;
     height: max-content;
-    background: rgb(232,242,255,1);
+    background: rgb(232, 242, 255, 1);
     margin-bottom: 1%;
 }
 
@@ -85,12 +88,12 @@ span {
     font-size: 80px;
     display: inline-block;
     font-weight: bolder;
-    color: rgb(26, 57, 101); 
+    color: rgb(26, 57, 101);
     animation: mover 4.5s linear infinite;
 }
 
 .words>p {
-    color:  rgba(26, 57, 101); 
+    color: rgba(26, 57, 101);
 }
 
 @keyframes mover {
@@ -99,12 +102,12 @@ span {
     }
 
     50% {
-        text-shadow: 0 0 50px rgba(39,144,210, 0.3);
+        text-shadow: 0 0 40px rgba(45, 161, 233, 0.3);
         /* transform: translateY(30px); */
     }
 
     100% {
-        text-shadow: 0 0 0px rgba(39,144,210,1);
+        text-shadow: 0 0 0px rgba(39, 144, 210);
     }
 }
 
@@ -151,7 +154,7 @@ span:nth-child(9) {
     box-sizing: border-box;
 }
 
-.me-leftside>p  {
+.me-leftside>p {
     font-size: 20px;
 }
 
@@ -178,9 +181,11 @@ span:nth-child(9) {
     width: 70%;
 }
 
-.gallery-cell>p, i {
+.gallery-cell>p,
+i {
     font-size: 30px;
 }
+
 .gallery-cell>h3 {
     font-size: 35px;
 }
@@ -248,10 +253,9 @@ footer {
     margin: 1% 20px;
     color: black;
 }
+
 .myname {
     text-decoration: none;
     color: black;
     margin: 0 0.2%;
 }
-
-
