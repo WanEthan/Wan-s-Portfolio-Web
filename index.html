@@ -133,8 +133,9 @@
                         <a href="https://github.com/WanEthan/simple-calculator" class="code-link1"
                             onmouseover="hoverover('code-link1')" onmouseout="hoverout('code-link1')"> <i
                                 class="fa-solid fa-code"></i></a>
-                        <a href="#" class="demo-link1" onmouseover="hoverover('demo-link1')"
-                            onmouseout="hoverout('demo-link1')"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="https://wanethan.github.io/simple-calculator/" class="demo-link1"
+                            onmouseover="hoverover('demo-link1')" onmouseout="hoverout('demo-link1')"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
 
                 </div>
@@ -206,25 +207,32 @@
             </div>
 
             <div class="col">
-                <form action="/submit-url" method="post">
+                <form action="https://formsubmit.co/qwe052061@gmail.com" method="post">
                     <!-- The action attribute indicates where form data should be sent. For example, <form action="/submit-url"></form> tells the browser that the form data should be sent to the path /submit-url-->
+                    <!-- Honeypot -->
+                    <input type="text" name="_honey" style="display: none;">
+
+                    <!-- Disable captacha -->
+                    <input type="hidden" name="_captacha" value="false">
+                    <input type="hidden" name="_next" value="">
+
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="name" required>
+                        <input type="text" class="form-control" name="name" required>
                         <!-- input element is a in-line element-->
                         <label for="name" class="form-label">Your Name: </label>
                         <!-- label element is a in-line element-->
                     </div>
 
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="email" required>
+                        <input type="email" class="form-control" name="email" required>
                         <label for="email" class="form-label">Your Email address: </label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="date" class="form-control" id="date" required>
+                        <input type="date" class="form-control" name="date" required>
                         <label for="date" class="form-label">Date: </label>
                     </div>
                     <div class="form-floating mb-3">
-                        <textarea class="form-control" id="message" rows="3"></textarea>
+                        <textarea class="form-control" name="message" rows="3"></textarea>
                         <label for="message" class="form-label">Message: </label>
                     </div>
 
@@ -234,7 +242,7 @@
                     </div>
 
                     <div class="button-div">
-                        <button class="button" type="submit">Submit</button>
+                        <button class="button" type="submit" value="send">Submit</button>
                     </div>
 
                 </form>
