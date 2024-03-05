@@ -45,4 +45,10 @@ function hoverout(iconname) {
     }
 }
 
-let slidemove
+// let slidemove
+
+
+// function myFunction() {
+//     document.getElementById("welcome").style.backgroundImage = "linear-gradient(rgba(255,255,255,0.15), rgba(255,255,255,0.35)), url(background-1.jpeg)";
+//     document.getElementById("welcome").style.backgroundSize = "contain";
+// }
